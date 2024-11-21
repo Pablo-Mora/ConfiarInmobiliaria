@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header con el menú de navegación -->
+    <div class="header-1">
+        <nav class="nav-1">
+            <a target="_blank" href="https://www.facebook.com/p/Confiarinmobiliaria-Carrera-89-48-E-15-100054337578746/" rel="noopener">
+                <img src="../Img/logos--facebook.svg" alt="logo-Facebook">
+            </a>
+            <a target="_blank" href="#">
+                <img src="../Img/logos--whatsapp-icon.svg" alt="logo-WhatsApp">
+            </a>
+            <a href="#">
+                | (604) 4447913
+            </a>
+        </nav>
+    </div>
+    <header>
+        <img src="../Img/logoInmobiliaria.svg" alt="logo-Inmobiliaria"></img>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="../views/propiedades.html">Nuestras Propiedades</a></li>
+                <li><a href="../views/simulator.html">Simulador de Compra</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Propiedad sector el Poblado</h1>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="./Img/Poblado.jpg" alt="Poblado" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="./Img/poblado1.jpg" alt="Poblado1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="./Img/poblado2.jpg" alt="Poblado2" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="./Img/poblado3.jpg" alt="Poblado3" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="./Img/poblado4.jpg" alt="Poblado4" onclick="openLightbox(this)">
+            </div>
+        </section>
+        
+        <!-- Lightbox modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-image">
+        </div>
+        
+        <section class="property-details">
+            <div class="property-section">
+                <h2>Características:</h2>
+                <ul>
+                    <li>Habitaciones <span>3</span> </li>
+                    <li>Baños <span>2</span> </li>
+                    <li>Closet <span>2</span> </li>
+                    <li>Tipo de Piso <span>Cerámica</span> </li>
+                    <li>Cocina <span>Integral</span> </li>
+                    <li>Zona de ropa <span>1</span> </li>
+                    <li>Garaje <span>1</span></li>
+                    <li>Sala comedor <span>1</span></li>
+                </ul>
+            </div>
+        
+            <div class="property-section">
+                <h2>Interior:</h2>
+                <ul>
+                    <li>Referencia: <span>V12232</span></li>
+                    <li>Sector: <span>Castellana</span></li>
+                    <li>Precio: <span>$480 000 000</span></li>
+                    <li>Área: <span>117 m²</span></li>
+                    <li>Estrato: <span>5</span></li>
+                    <li>Administración: <span>$320 000</span></li>
+                    <li>Amoblado: <span>No</span></li>
+                </ul>
+                <p><strong>Información adicional del inmueble:</strong> Ninguna</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contacto: confiar.inmobiliaria@gmail.com | Teléfono: (604) 4447913 | Celular: 301 7369427</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

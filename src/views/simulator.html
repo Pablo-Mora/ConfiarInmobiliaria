@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleSimulator.css">
+    <title>Simulador de Compra de Propiedades</title>
+</head>
+<body>
+    <!-- Header con el menú de navegación -->
+    <div class="header-1">
+        <nav class="nav-1">
+            <a target="_blank" href="https://www.facebook.com/p/Confiarinmobiliaria-Carrera-89-48-E-15-100054337578746/" rel="noopener">
+                <img src="../Img/logos--facebook.svg" alt="logo-Facebook">
+            </a>
+            <a target="_blank" href="#">
+                <img src="../Img/logos--whatsapp-icon.svg" alt="logo-WhatsApp">
+            </a>
+            <a href="#">
+                | (604) 4447913
+            </a>
+        </nav>
+    </div>
+    <header>
+        <img src="../Img/logoInmobiliaria.svg" alt="logo-Inmobiliaria"></img>
+        <nav>
+            <ul>
+                <li><a href="../views/index.html">Inicio</a></li>
+                <li><a href="../views/propiedades.html">Nuestras Propiedades</a></li>
+                <li><a href="#">Simulador de Compra</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Simulador de Compra de Propiedades</h2>
+            <div class="form-group">
+                <label for="propertyValue">Valor de la propiedad ($):</label>
+                <input type="number" id="propertyValue" placeholder="Ej: 100000">
+            </div>
+            <div class="form-group">
+                <label for="financeTerm">Plazo a financiar (meses):</label>
+                <input type="number" id="financeTerm" placeholder="Ej: 24">
+            </div>
+            <div class="form-group">
+                <button class="boton-elegante" onclick="calculate()">Calcular</button>
+            </div>
+        <h3>Resultados</h3>
+        <p id="results"></p>
+    </main>
+    <footer>
+        <p>Contacto: confiar.inmobiliaria@gmail.com | Teléfono: (604) 4447913 | Celular: 301 7369427</p>
+    </footer>
+    <script src="../scripts/simulator.js"></script>
+</body>
+</html>

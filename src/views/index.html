@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header con el menú de navegación -->
+    <div class="header-1">
+        <nav class="nav-1">
+            <a target="_blank" href="https://www.facebook.com/p/Confiarinmobiliaria-Carrera-89-48-E-15-100054337578746/" rel="noopener">
+                <img src="../Img/logos--facebook.svg" alt="logo-Facebook">
+            </a>
+            <a target="_blank" href="#">
+                <img src="../Img/logos--whatsapp-icon.svg" alt="logo-WhatsApp">
+            </a>
+            <a href="#">
+                | (604) 4447913
+            </a>
+        </nav>
+    </div>
+    <header>
+        <img src="../Img/logoInmobiliaria.svg" alt="logo-Inmobiliaria"></img>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="../views/propiedades.html">Nuestras Propiedades</a></li>
+                <li><a href="../views/simulator.html">Simulador de Compra</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de propiedades en venta y arriendo -->
+    <main>
+        <h2>Nuestras Propiedades</h2>
+        <div class="tab-menu">
+            <button class="tab-button" onclick="location.href='propiedadesVenta.html'">
+                Propiedades en venta
+            </button>
+            <button class="tab-button" onclick="location.href='propiedadesArriendo.html'">
+                Propiedades en Arriendo
+            </button>
+        </div>
+        <section id="venta" class="propiedades">
+            <div class="propiedad">
+                <img src="../Img/Poblado.jpg" alt="Propiedad en venta 1">
+                <h3>Casa en el Poblado</h3>
+                <p>Precio: $4,500,000,000</p>
+            </div>
+            <div class="propiedad">
+                <img src="../Img/aptoPalmas.jpg" alt="Propiedad en venta 2">
+                <h3>Apartamento moderno</h3>
+                <p>Precio: $2,000,000,000</p>
+            </div>
+        </section>
+        <section id="arriendo" class="propiedades oculto">
+            <div class="propiedad">
+                <img src="propiedad3.jpg" alt="Propiedad en arriendo 1">
+                <h3>Apartamento en el norte</h3>
+                <p>Arriendo: $800 / mes</p>
+            </div>
+            <div class="propiedad">
+                <img src="propiedad4.jpg" alt="Propiedad en arriendo 2">
+                <h3>Casa en las afueras</h3>
+                <p>Arriendo: $1,200 / mes</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contacto: confiar.inmobiliaria@gmail.com | Teléfono: (604) 4447913 | Celular: 301 7369427</p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
