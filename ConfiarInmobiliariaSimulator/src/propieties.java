@@ -10,4 +10,8 @@ public class propieties extends inmobiliaria{
         this.direcctionP = direcctionP;
         this.descriptionP = descriptionP;
     }
+
+    public void agergarPropiedad(){
+
+    }
 }

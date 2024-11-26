@@ -8,4 +8,7 @@ public class secretary extends inmobiliaria{
         this.nameS = nameS;
     }
 
+    public void actualizarPropiedades(){
+
+    }
 }
