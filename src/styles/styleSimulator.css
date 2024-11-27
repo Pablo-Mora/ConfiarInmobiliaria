@@ -109,7 +109,11 @@ th {
 }
 
 p {
-    color: #555;
+    color: #000;
     line-height: 1.6;
     margin-top: 1.5rem;
+}
+
+footer p{
+    color: #f4f4f4
 }
