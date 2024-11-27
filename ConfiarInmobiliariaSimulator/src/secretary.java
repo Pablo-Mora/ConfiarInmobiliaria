@@ -1,14 +1,19 @@
-public class secretary extends inmobiliaria{
-    private int id;
-    private String nameS;
+public class secretary {
+    public class propieties extends inmobiliaria{
+        private int codeP;
+        private String direcctionP;
+        private String descriptionP;
 
-    public secretary(int nit, String name, String description, int id, String nameS){
-        super(nit, name, description);
-        this.id = id;
-        this.nameS = nameS;
-    }
+        public propieties(int nit, String name, String description, int codeP, String direcctionP,
+                          String descriptionP){
+            super(nit, name, description);
+            this.codeP = codeP;
+            this.direcctionP = direcctionP;
+            this.descriptionP = descriptionP;
+        }
 
-    public void actualizarPropiedades(){
+        public void agergarPropiedad(){
 
+        }
     }
 }
