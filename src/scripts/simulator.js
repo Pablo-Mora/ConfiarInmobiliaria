@@ -22,7 +22,7 @@ function formatNumber(input) {
 
     // Actualizar los valores en la tabla
     const resultsTable = document.querySelector("table");
-    resultsTable.rows[1].cells[1].textContent = formatNumberWithCommas(totalInterest.toFixed(0));
+    resultsTable.rows[1].cells[1].textContent = formatNumberWithCommas(totalInterest.toFixed(0)); // Redondea el resultado sin decimales.
     resultsTable.rows[2].cells[1].textContent = formatNumberWithCommas(commission.toFixed(0));
     resultsTable.rows[3].cells[1].textContent = formatNumberWithCommas(netValue.toFixed(0));
   }
