@@ -1,22 +1,32 @@
-function calculate() {
-    const propertyValue = parseFloat(document.getElementById("propertyValue").value);
+function formatNumber(input) {
+    // Eliminar cualquier carácter que no sea un dígito
+    let value = input.value.replace(/\D/g, '');
+
+    // Agregar las comas de miles
+    value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    // Actualizar el valor del input
+    input.value = value;
+  }
+
+  function calculateResults() {
+    // Código de cálculo de resultados
+    const propertyValue = parseFloat(document.getElementById("propertyValue").value.replace(/,/g, ''));
     const financeTerm = parseInt(document.getElementById("financeTerm").value);
-    const monthlyInterest = 1.2 / 100; // 1.2% mensual
-    const commissionRate = 5 / 100; // 5% comisión
+    const monthlyInterestRate = 0.012; // 1.2% mensual
+    const commissionRate = 0.05; // 5% comisión
 
-    // Calcular el interés total
-    const totalInterest = propertyValue * monthlyInterest * financeTerm;
-
-    // Calcular la comisión de la inmobiliaria
+    const totalInterest = propertyValue * monthlyInterestRate * financeTerm;
     const commission = propertyValue * commissionRate;
-
-    // Calcular el valor neto de la propiedad
     const netValue = propertyValue + totalInterest + commission;
 
-    // Mostrar resultados
-    document.getElementById("results").innerHTML = `
-        Intereses Totales: $${totalInterest.toFixed(2)}<br>
-        Comisión de la Inmobiliaria: $${commission.toFixed(2)}<br>
-        Valor Neto de la Propiedad: $${netValue.toFixed(2)}
-    `;
-}
+    // Actualizar los valores en la tabla
+    const resultsTable = document.querySelector("table");
+    resultsTable.rows[1].cells[1].textContent = formatNumberWithCommas(totalInterest.toFixed(0));
+    resultsTable.rows[2].cells[1].textContent = formatNumberWithCommas(commission.toFixed(0));
+    resultsTable.rows[3].cells[1].textContent = formatNumberWithCommas(netValue.toFixed(0));
+  }
+
+  function formatNumberWithCommas(value) {
+    return value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }

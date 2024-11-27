@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <title>Document</title>
 </head>
 <body>
@@ -34,38 +35,37 @@
     </header>
     <!-- Sección de propiedades en venta y arriendo -->
     <main>
-        <h2>Nuestras Propiedades</h2>
-        <div class="tab-menu">
-            <button class="tab-button" onclick="location.href='propiedadesVenta.html'">
-                Propiedades en venta
-            </button>
-            <button class="tab-button" onclick="location.href='propiedadesArriendo.html'">
-                Propiedades en Arriendo
-            </button>
-        </div>
-        <section id="venta" class="propiedades">
-            <div class="propiedad">
-                <img src="../Img/Poblado.jpg" alt="Propiedad en venta 1">
-                <h3>Casa en el Poblado</h3>
-                <p>Precio: $4,500,000,000</p>
-            </div>
-            <div class="propiedad">
-                <img src="../Img/aptoPalmas.jpg" alt="Propiedad en venta 2">
-                <h3>Apartamento moderno</h3>
-                <p>Precio: $2,000,000,000</p>
+        <section>
+            <h2>Nuestras Propiedades</h2>
+            <div class="tab-menu">
+                <button class="tab-button" onclick="location.href='propiedades.html'">
+                    Propiedades en venta
+                </button>
+                <button class="tab-button" onclick="location.href='propiedades.html#arriendo'">
+                    Propiedades en Arriendo
+                </button>
             </div>
         </section>
-        <section id="arriendo" class="propiedades oculto">
-            <div class="propiedad">
-                <img src="propiedad3.jpg" alt="Propiedad en arriendo 1">
-                <h3>Apartamento en el norte</h3>
-                <p>Arriendo: $800 / mes</p>
+        <!-- Sección de propiedades en venta y arriendo -->
+        <section class="search-bar">
+            <input type="text" placeholder="Sector" id="sector">
+            <button class="search-button">🔍 Buscar</button>
+            <div class="tab">
+                <span class="active">Arrendar</span>
+                <span class="active">Comprar</span>
             </div>
-            <div class="propiedad">
-                <img src="propiedad4.jpg" alt="Propiedad en arriendo 2">
-                <h3>Casa en las afueras</h3>
-                <p>Arriendo: $1,200 / mes</p>
-            </div>
+            <select id="tipo-inmueble" aria-label="Tipo de inmueble">
+                <option value="apartamento">Apartamento</option>
+                <option value="casa">Casa</option>
+                <option value="oficina">Oficina</option>
+                <!-- Añadir más opciones según sea necesario -->
+            </select>
+            <select id="presupuesto" aria-label="Presupuesto">
+                <option value="500000000">Hasta $500,000,000</option>
+                <option value="700000000">Hasta $700,000,000</option>
+                <option value="1200000000">Hasta $1,200,000,000</option>
+                <!-- Añadir más opciones según sea necesario -->
+            </select>
         </section>
     </main>
     <footer>

@@ -1,0 +1,97 @@
+/* Estilo para la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3e8e41;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.tab span {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tab span.active {
+    color: #4CAF50;
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f44336;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+/* Botones de Arrendar y Comprar */
+.tab {
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.tab.active {
+    background-color: #333;
+}
+
+/* Inputs y selectores */
+.search-bar input,
+.search-bar select {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Botón de Buscar */
+.search-bar button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #444;
+}
+
+/* Flecha decorativa */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #f44336;
+    margin-top: -5px;
+}

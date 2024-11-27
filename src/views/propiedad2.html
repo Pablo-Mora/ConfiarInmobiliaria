@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/stylePripiedad1,2.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
         <img src="../Img/logoInmobiliaria.svg" alt="logo-Inmobiliaria"></img>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="../views/index.html">Inicio</a></li>
                 <li><a href="../views/propiedades.html">Nuestras Propiedades</a></li>
                 <li><a href="../views/simulator.html">Simulador de Compra</a></li>
                 <li><a href="../views/contacto.html">Contacto</a></li>
@@ -33,29 +34,38 @@
         </nav>
     </header>
     <main>
-
         <h1>Propiedad sector Palmas</h1>
-        <section class="gallery">
-            <div class="gallery-item">
-                <img src="./Img/palmas I.jpg" alt="Palmas" onclick="openLightbox(this)">
+        <section class="image-carousel">
+            <div class="carousel-container">
+              <div class="carousel-slide">
+                <img src="../Img/aptoPalmas.jpg" alt="Image 1" />
+              </div>
+              <div class="carousel-slide">
+                <img src="../Img/palmasI.jpg" alt="Image 2" />
+              </div>
+              <div class="carousel-slide">
+                <img src="../Img/palmasII.jpg" alt="Image 3" />
+              </div>
+              <div class="carousel-slide">
+                <img src="../Img/palmasIII.jpg" alt="Image 4" />
+              </div>
+              <div class="carousel-slide">
+                <img src="../Img/palmasIIII.jpg" alt="Image 5" />
+              </div>
             </div>
-            <div class="gallery-item">
-                <img src="./Img/palmas II.jpg" alt="palmas1" onclick="openLightbox(this)">
-            </div>
-            <div class="gallery-item">
-                <img src="./Img/palmas III.jpg" alt="Poblado2" onclick="openLightbox(this)">
-            </div>
-            <div class="gallery-item">
-                <img src="./Img/palmas IIII.jpg" alt="Poblado3" onclick="openLightbox(this)">
+            <div class="carousel-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
             </div>
         </section>
-        
         <!-- Lightbox modal -->
         <div id="lightbox" class="lightbox">
             <span class="close" onclick="closeLightbox()">&times;</span>
-            <img class="lightbox-content" id="lightbox-image">
+            <img class="lightbox-content" id="lightbox-image" alt="Imagen de la propiedad">
         </div>
-        
         <section class="property-details">
             <div class="property-section">
                 <h2>Características:</h2>
@@ -70,7 +80,6 @@
                     <li>Sala comedor <span>1</span></li>
                 </ul>
             </div>
-        
             <div class="property-section">
                 <h2>Interior:</h2>
                 <ul>
@@ -89,6 +98,6 @@
     <footer>
         <p>Contacto: confiar.inmobiliaria@gmail.com | Teléfono: (604) 4447913 | Celular: 301 7369427</p>
     </footer>
-    <script src="./main.js"></script>
+    <script src="../scripts/propiedad1,2.js"></script>
 </body>
 </html>

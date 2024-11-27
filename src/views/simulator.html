@@ -34,20 +34,40 @@
         </nav>
     </header>
     <main>
-        <h2>Simulador de Compra de Propiedades</h2>
+        <section>
+            <h2>Resumen de Resultados</h2>
             <div class="form-group">
-                <label for="propertyValue">Valor de la propiedad ($):</label>
-                <input type="number" id="propertyValue" placeholder="Ej: 100000">
+              <label for="propertyValue">Valor de la Propiedad:</label>
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input type="text" id="propertyValue" placeholder="Ingresa el valor de la propiedad" required onkeyup="formatNumber(this)" class="form-input">
+              </div>
             </div>
             <div class="form-group">
-                <label for="financeTerm">Plazo a financiar (meses):</label>
-                <input type="number" id="financeTerm" placeholder="Ej: 24">
+              <label for="financeTerm">Plazo de Financiamiento (meses):</label>
+              <input type="number" id="financeTerm" placeholder="Ingresa el plazo de financiamiento" required class="form-control form-input">
             </div>
-            <div class="form-group">
-                <button class="boton-elegante" onclick="calculate()">Calcular</button>
-            </div>
-        <h3>Resultados</h3>
-        <p id="results"></p>
+            <button onclick="calculateResults()" class="btn-primary">Calcular</button>
+            <table>
+              <tr>
+                <th>Concepto</th>
+                <th>Valor</th>
+              </tr>
+              <tr>
+                <td>Intereses Totales</td>
+                <td class="text-end"></td>
+              </tr>
+              <tr>
+                <td>Comisión de la Inmobiliaria</td>
+                <td class="text-end"></td>
+              </tr>
+              <tr>
+                <td>Valor Neto de la Propiedad</td>
+                <td class="text-end"></td>
+              </tr>
+            </table>
+            <p>Los resultados muestran los intereses totales, la comisión de la inmobiliaria y el valor neto de la propiedad. Estos datos son importantes para comprender el impacto financiero de la transacción.</p>
+        </section>
     </main>
     <footer>
         <p>Contacto: confiar.inmobiliaria@gmail.com | Teléfono: (604) 4447913 | Celular: 301 7369427</p>
